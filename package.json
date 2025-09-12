@@ -22,7 +22,10 @@
   "homepage": "https://github.com/iancaTino/Guardians_of_the_Galaxy#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^6.0.1",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
     "sass": "^1.92.1"
   }
 }
