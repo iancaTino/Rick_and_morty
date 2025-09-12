@@ -1,49 +1,13 @@
 @use 'variaveis';
+@use 'hero';
+@use 'header';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    overflow: hidden;
-    background: variaveis.$black;
-    color: variaveis.$thirdColor;
-    font-family: Arial, sans-serif;
-
-    canvas#space {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        z-index: -1;
-    }
-
-    .content {
-        position: relative;
-        text-align: center;
-        top: 30%;
-
-        h1 {
-            font-family: 'Russo One', sans-serif;
-            font-size: 3rem;
-            color: variaveis.$firstColor;
-            text-shadow:
-                0 0 3px variaveis.$firstColor,
-                0 0 8px variaveis.$firstColor;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: text-shadow 0.3s ease-in-out;
-
-            &:hover {
-                text-shadow:
-                    0 0 6px variaveis.$black,
-                    0 0 12px variaveis.$black;
-            }
-        }
-
-        p {
-            font-size: 1.5rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-    }
+    background-color: variaveis.$secondColor;
 }
