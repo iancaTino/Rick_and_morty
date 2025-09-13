@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 header {
-    position: fixed; // gruda no topo
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -9,22 +9,23 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4); // transparente/fosco
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 100;
+    border: rgb(255, 0, 43);
 
     .navbar {
         display: flex;
         align-items: center;
         width: 100%;
-        max-width: 1200px; // limita a largura pra não esticar demais
+        max-width: 1200px;
 
         .nav-links {
             display: flex;
             list-style: none;
             gap: 30px;
-            margin: 0 auto; // centraliza horizontalmente
+            margin: 0 auto;
             padding: 0;
 
             li a {
@@ -41,6 +42,7 @@ header {
         }
 
         .explore-btn {
+            font-family: 'Roboto' ;
             padding: 10px 20px;
             font-weight: bold;
             background: linear-gradient(90deg, variaveis.$green_neon, variaveis.$ciano, variaveis.$purple);
@@ -48,7 +50,7 @@ header {
             text-decoration: none;
             border-radius: 5px;
             transition: background 0.3s ease;
-            margin-left: auto; // empurra pra direita
+            margin-left: auto;
 
             &:hover {
                 background: linear-gradient(90deg, variaveis.$purple, variaveis.$ciano, variaveis.$green_neon);

@@ -1,0 +1,18 @@
+@use 'variaveis';
+
+.personagens {
+    text-align: center;
+
+    h2{
+        font-size: 3rem;
+    }
+
+    p {
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        color: variaveis.$thirdColor;
+        font-weight: lighter;
+        margin: 20px 0;
+        margin-bottom: 7rem;
+    }
+}

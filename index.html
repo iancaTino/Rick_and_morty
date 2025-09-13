@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,20 +19,69 @@
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="#hero">Início</a></li>
-                <li><a href="#">Personagens</a></li>
-                <li><a href="#">Episódios</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#explore">explore</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#sobre">Sobre</a></li>
             </ul>
             <a href="#" class="explore-btn">Explorar Universos</a>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="content">
             <h1>Explore o<br> Multiverso de Rick<br> and Morty</h1>
             <p>Descubra personagens, episódios e realidades alternativas em um só lugar.</p>
             <a href="#" class="btn">Comece Agora</a>
         </div>
+        <div class="particles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <section class="explore" id="explore">
+        <h2>Explore o universo</h2>
+        <p>Mergulhe nas aventuras científicas mais loucas da galáxia</p>
+        <div class="explore-list">
+            <ul>
+                <li>
+                    <div class="icon-container">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h3>Personagens</h3>
+                    <p>Conheça todos os personagens do multiverso Rick e Morty</p>
+                </li>
+                <li>
+                    <div class="icon-container">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+                    <h3>Episódios</h3>
+                    <p>Explore todos os episódios e suas aventuras interdimensionais</p>
+                </li>
+                <li>
+                    <div class="icon-container">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h3>Realidades Alternativas</h3>
+                    <p>Descubra as infinitas possibilidades do multiverso</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="personagens" id="personagens">
+        <h2>
+            Conheça os Personagens
+        </h2>
+        <p>Mergulhe nas aventuras científicas mais loucas da galáxia</p>
     </section>
 
     <script src="scripts/main.js"></script>
