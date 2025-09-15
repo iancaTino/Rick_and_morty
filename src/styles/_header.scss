@@ -13,7 +13,6 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 100;
-    border: rgb(255, 0, 43);
 
     .navbar {
         display: flex;
@@ -32,6 +31,7 @@ header {
                 color: variaveis.$thirdColor;
                 text-decoration: none;
                 font-weight: bold;
+                font-size: 20px;
                 font-family: 'Roboto', sans-serif;
                 transition: color 0.3s;
 
