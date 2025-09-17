@@ -1,0 +1,78 @@
+@use 'variaveis';
+
+.footer {
+    border-top: 1px solid #1f5002;
+    background-image: url('../images/sky.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 20px;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        >div {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .texto_p {
+            margin-left: 5.6vw;
+            color: #d2dad2;
+            padding: 5vw;
+            font-size: 20px
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-left: 39%;
+            font-size: 25px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 2vw;
+        }
+
+        li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        a {
+            color: variaveis.$thirdColor;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s;
+            margin-left: 39%;
+            transition: transform 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                color: variaveis.$green_neon;
+                color: #0f0;
+                transform: translateY(-5px) rotate(-2deg) scale(1.05);
+                text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+            }
+        }
+    }
+
+
+.linha {
+    border: none;
+    border-top: 1px solid #1f5002;
+    width: 40%;
+    margin: 30px auto;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+}
