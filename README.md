@@ -36,6 +36,11 @@ Este projeto é uma viagem interdimensional pelo universo de **Rick & Morty**. A
 
 ## 📦 Como Rodar
 
+Você pode acessar o projeto online pelo link do Vercel:  
+[Ver Rick & Morty em ação!](https://seu-link-no-vercel.vercel.app)
+
+Ou, se quiser rodar localmente:
+
 1. Clone o repositório:
 ```bash
 git clone https://github.com/iancaTino/Rick_and_morty.git
