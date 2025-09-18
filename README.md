@@ -37,7 +37,7 @@ Este projeto é uma viagem interdimensional pelo universo de **Rick & Morty**. A
 ## 📦 Como Rodar
 
 Você pode acessar o projeto online pelo link do Vercel:  
-[Ver Rick & Morty em ação!](https://seu-link-no-vercel.vercel.app)
+[Ver Rick & Morty em ação!](https://rick-and-morty-pi-smoky.vercel.app/)
 
 Ou, se quiser rodar localmente:
 
