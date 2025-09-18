@@ -10,7 +10,7 @@ Este projeto é uma viagem interdimensional pelo universo de **Rick & Morty**. A
 
 - Interface web minimalista inspirada na série Rick & Morty.
 - Layout responsivo pra você acessar até de outra dimensão (ou do celular mesmo).
-- Consumindo ou exibindo dados dos personagens da série (se você quiser integrar com API oficial… portal gun opcional).
+- Explorando o universo do Rick & Morty com uma interface interativa que exibe personagens e episódios.
 - Praticando **HTML**, **SCSS**, **JavaScript**, e **Gulp** porque Rick adora complicar as coisas.
 
 ---
