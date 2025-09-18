@@ -77,13 +77,14 @@
         }
     }
 
+    // MOBILE
     @media (max-width: 768px) {
         h2 {
             font-size: 2rem;
         }
 
         p {
-            font-size: 1.0rem;
+            font-size: 1rem;
             margin-bottom: 1rem;
         }
 
@@ -104,6 +105,36 @@
 
         .explore-list ul .icon-container i {
             font-size: 2.5rem;
+        }
+    }
+
+    // TABLET
+    @media (min-width: 769px) and (max-width: 1024px) {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .explore-list ul {
+            padding: 4rem;
+            gap: 3rem;
+        }
+
+        .explore-list ul li {
+            padding: 2.5rem;
+            min-height: 250px;
+        }
+
+        .explore-list ul h3 {
+            font-size: 2rem;
+        }
+
+        .explore-list ul .icon-container i {
+            font-size: 2.7rem;
         }
     }
 }

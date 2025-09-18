@@ -18,7 +18,7 @@
     &__tabs {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
 
         &__button {
             font-size: 20px;
@@ -114,6 +114,7 @@
         }
     }
 
+    // MOBILE
     @media (max-width: 768px) {
         h2 {
             font-size: 2rem;
@@ -137,7 +138,7 @@
 
         &__list {
             padding: 3rem;
-            grid-template-columns: 1fr; 
+            grid-template-columns: 1fr;
             gap: 1.5rem;
 
             &__item {
@@ -159,6 +160,55 @@
 
                 p {
                     font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    // TABLET
+    @media (min-width: 769px) and (max-width: 1024px) {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        &__tabs {
+            &__button {
+                font-size: 18px;
+                padding: 15px 20px;
+                margin: 0 8px;
+            }
+        }
+
+        &__list {
+            padding: 4rem;
+            grid-template-columns: repeat(2, 1fr); // 2 colunas em tablet
+            gap: 1.8rem;
+
+            &__item {
+                padding: 2.5rem;
+                min-height: 250px;
+
+                img {
+                    width: 130px;
+                    height: 130px;
+                }
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                h5,
+                h4 {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 1rem;
                 }
             }
         }
