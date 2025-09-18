@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 header {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -39,10 +39,14 @@ header {
                     color: variaveis.$green_neon;
                 }
             }
+
+            .mobile-explore-btn {
+                display: none;
+            }
         }
 
         .explore-btn {
-            font-family: 'Roboto' ;
+            font-family: 'Roboto';
             padding: 10px 20px;
             font-weight: bold;
             background: linear-gradient(90deg, variaveis.$green_neon, variaveis.$ciano, variaveis.$purple);
@@ -54,6 +58,58 @@ header {
 
             &:hover {
                 background: linear-gradient(90deg, variaveis.$purple, variaveis.$ciano, variaveis.$green_neon);
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+
+            span {
+                width: 25px;
+                height: 3px;
+                background: variaveis.$thirdColor;
+                border-radius: 2px;
+                display: block;
+                transition: all 0.3s ease;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.9);
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px 0;
+                text-align: center;
+
+                .mobile-explore-btn {
+                    display: block;
+                }
+            }
+
+            .explore-btn {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+                margin-left: auto;
+            }
+
+            .menu-toggle:checked+.hamburger+.nav-links {
+                display: flex;
             }
         }
     }

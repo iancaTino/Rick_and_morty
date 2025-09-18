@@ -18,6 +18,7 @@
     &__tabs {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap; 
 
         &__button {
             font-size: 20px;
@@ -45,10 +46,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
 
-        @media (max-width: 768px) {
-            grid-template-columns: 1fr;
-        }
-
         &--is-active {
             display: grid;
         }
@@ -67,7 +64,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 
             &:hover {
-                transform: translateY(-10px); 
+                transform: translateY(-10px);
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
                 border-color: variaveis.$green_neon;
             }
@@ -113,6 +110,56 @@
                 margin: 0;
                 font-weight: lighter;
                 color: #9da59d;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        &__tabs {
+            flex-direction: column;
+            align-items: center;
+
+            &__button {
+                font-size: 16px;
+                padding: 10px;
+                margin: 5px 0;
+            }
+        }
+
+        &__list {
+            padding: 3rem;
+            grid-template-columns: 1fr; 
+            gap: 1.5rem;
+
+            &__item {
+                padding: 2rem;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                h5,
+                h4 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
             }
         }
     }

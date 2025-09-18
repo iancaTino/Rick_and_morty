@@ -24,12 +24,12 @@
             margin-left: 5.6vw;
             color: #d2dad2;
             padding: 5vw;
-            font-size: 20px
+            font-size: 20px;
         }
 
         h3 {
             margin-top: 20px;
-            margin-left: 39%;
+            margin-left: 39%; 
             font-size: 25px;
         }
 
@@ -48,12 +48,10 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 20px;
-            transition: color 0.3s;
-            margin-left: 39%;
+            margin-left: 39%; 
             transition: transform 0.3s ease, color 0.3s ease;
 
             &:hover {
-                color: variaveis.$green_neon;
                 color: #0f0;
                 transform: translateY(-5px) rotate(-2deg) scale(1.05);
                 text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
@@ -61,18 +59,66 @@
         }
     }
 
+    .linha {
+        border: none;
+        border-top: 1px solid #1f5002;
+        width: 40%;
+        margin: 30px auto;
+    }
 
-.linha {
-    border: none;
-    border-top: 1px solid #1f5002;
-    width: 40%;
-    margin: 30px auto;
-}
+    .copy {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        opacity: 0.8;
+    }
 
-.copy {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 16px;
-    opacity: 0.8;
-}
+    @media (max-width: 768px) {
+        padding: 20px 10px;
+
+        .footer-content {
+            flex-direction: column;
+            align-items: flex-start; 
+            text-align: left;
+
+            .texto_p {
+                margin-left: 0;
+                padding: 5vw;
+                font-size: 20px;
+            }
+
+            h3 {
+                padding: 20px 0;
+                margin-top: -10%;
+                margin-left: 20px;
+                font-size: 30px;
+            }
+
+            ul {
+                margin-left: 20px;
+                padding: 0;
+                width: 100%;
+            }
+
+            li {
+                text-align: left;
+            }
+
+            a {
+                margin-left: 0; 
+                font-size: 18px;
+                display: inline-block;
+                font-weight: lighter;
+            }
+        }
+
+        .linha {
+            width: 80%;
+        }
+
+        .copy {
+            font-size: 16px;
+            margin-bottom: 3rem;
+        }
+    }
 }
